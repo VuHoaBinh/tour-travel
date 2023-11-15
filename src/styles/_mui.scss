@@ -1,0 +1,186 @@
+.MuiDataGrid-root {
+  * {
+    outline: none !important;
+  }
+  .MuiDataGrid-columnSeparator {
+    display: none;
+  }
+  .MuiDataGrid-columnHeaderTitle {
+    font-size: 16px;
+  }
+
+  .MuiDataGrid-columnHeader {
+    background-color: var(--color-paper-dark);
+    &:hover {
+      background-color: var(--color-paper-grey);
+    }
+  }
+
+  .MuiDataGrid-columnHeader,
+  .MuiDataGrid-cell {
+    border-color: var(--color-border-main);
+    padding: 12px 16px;
+    font-size: 16px;
+
+    &:last-child {
+      border-right-width: 0px;
+    }
+  }
+
+  .MuiDataGrid-columnHeaderTitleContainer {
+    justify-content: space-between;
+
+    > .MuiDataGrid-iconButtonContainer .MuiSvgIcon-root {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .MuiDataGrid-cell.Pinned {
+    @include tablet {
+      position: sticky;
+      background: var(--color-background-main);
+      z-index: 1;
+      @apply shadow-md;
+    }
+    &.-right {
+      right: 0px;
+    }
+    &.-left {
+      left: 0px;
+    }
+  }
+}
+
+.MuiTextField-root {
+  .MuiInputBase-root.MuiOutlinedInput-root {
+    border-radius: 0px;
+
+    &:hover .MuiOutlinedInput-notchedOutline {
+      border-color: var(--color-primary-main);
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+  }
+  .MuiInputBase-input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.MuiTab-root {
+  &.MuiTab-textColorPrimary:hover {
+    background-color: var(--color-paper-dark);
+  }
+  &.Mui-selected {
+    background-color: white;
+  }
+}
+
+.MuiButtonBase-root {
+  background-color: #0000000A !important;
+}
+
+.MuiDialog-root {
+  .MuiDialogTitle-root {
+    padding: 24px 24px 12px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .MuiDialogContent-root {
+    padding: 12px 24px;
+  }
+  .MuiDialogActions-root {
+    padding: 12px 24px 24px;
+  }
+}
+
+.MuiPaper-root {
+  &.MuiPaper-elevation1 {
+    @apply shadow-md;
+  }
+  &.MuiPaper-outlined {
+    border-color: var(--color-border-main);
+  }
+}
+
+.MuiButton-root {
+  .MuiLoadingButton-loadingIndicator {
+    position: static;
+    left: 0px;
+    margin-left: 4px;
+  }
+}
+
+.MuiButton-containedPrimary {
+  background-color: var(--color-primary-main);
+}
+
+.MuiButton-containedSecondary {
+  background-color: var(--color-secondary-main);
+}
+
+.MuiButton-root {
+  &.MuiButton-containedPrimary {
+    &.Mui-disabled,
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      background-color: var(--color-primary-dark);
+      color: #fffc;
+    }
+  }
+
+  &.MuiButton-containedSecondary {
+    &.Mui-disabled,
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      background-color: var(--color-secondary-dark);
+      color: #fffc;
+    }
+  }
+
+  &.MuiButton-containedInherit {
+    background-color: var(--color-paper-dark);
+    &:hover {
+      background-color: var(--color-paper-grey);
+    }
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      color: var(--color-text-disabled);
+    }
+  }
+}
+
+.MuiButton-root {
+  &.MuiButton-outlined {
+    @apply shadow-sm;
+  }
+
+  &.MuiButton-outlinedPrimary {
+    color: var(--color-primary-main);
+    &.Mui-disabled,
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      color: var(--color-primary-dark);
+    }
+  }
+
+  &.MuiButton-outlinedSecondary {
+    color: var(--color-secondary-main);
+    &.Mui-disabled,
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      color: var(--color-secondary-dark);
+    }
+  }
+
+  &.MuiButton-outlinedInherit {
+    border-color: var(--color-border-dark);
+    &.Mui-disabled,
+    &.MuiLoadingButton-loading,
+    .MuiLoadingButton-loadingIndicator {
+      color: var(--color-text-disabled);
+    }
+  }
+}
+

@@ -1,0 +1,55 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'styles/vars';
+@import 'styles/custom';
+@import 'styles/mui';
+
+main {
+  background-color: var(--color-background-main);
+  color: var(--color-text-primary);
+}
+
+:root {
+  --color-primary-light: #8e7dff;
+  --color-primary-main: #725dff;
+  --color-primary-dark: #4f41b2;
+
+  --color-secondary-light: #33ab9f;
+  --color-secondary-main: #009688;
+  --color-secondary-dark: #00695f;
+
+  // For variables
+  --color-paper-main: #ffffff;
+  --color-paper-dark: #efefef;
+  --color-paper-grey: #dfdfdf;
+
+  --color-text-primary: rgba(0, 0, 0, 0.96);
+  --color-text-secondary: rgba(0, 0, 0, 0.55);
+  --color-text-disabled: rgba(0, 0, 0, 0.4);
+
+  // For themes only
+  --color-background-main: #fafafa;
+
+  --color-border-main: rgba(0, 0, 0, 0.1);
+  --color-border-dark: rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme='dark'] {
+  --color-paper-main: #121212;
+  --color-paper-dark: #202020;
+  --color-paper-grey: #303030;
+
+  --color-text-primary: rgba(255, 255, 255, 0.96);
+  --color-text-secondary: rgba(255, 255, 255, 0.6);
+  --color-text-disabled: rgba(255, 255, 255, 0.4);
+
+  --color-background-main: #000000;
+
+  --color-border-main: rgba(255, 255, 255, 0.06);
+  --color-border-dark: rgba(255, 255, 255, 0.2);
+}
