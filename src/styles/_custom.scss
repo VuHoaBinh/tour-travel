@@ -1,0 +1,89 @@
+@for $i from 1 through 12 {
+  .max-line-#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+  }
+}
+
+.notistack-Snackbar {
+  .notistack-MuiContent {
+    font-size: 16px;
+    svg {
+      font-size: 24px;
+    }
+  }
+}
+
+.slick-slider {
+  margin-bottom: 0px;
+
+  .slick-list {
+    width: 100%;
+  }
+
+  .slick-dots {
+    bottom: -40px;
+    @media (min-width: 800px) {
+      text-align: center;
+      padding-right: 16px;
+    }
+
+    li,
+    li button::before {
+      width: 40px;
+      height: 10px;
+    }
+    li.slick-active,
+    li.slick-active button::before {
+      width: 60px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    li button::before {
+      content: '';
+      opacity: 1;
+      background-color: #999;
+      border-radius: 10px;
+    }
+    li.slick-active button::before {
+      background-color: #9588ff;
+    }
+  }
+
+  .slick-arrow {
+    z-index: 1;
+    &::before {
+      font-size: 28px;
+      color: #999;
+    }
+    &.slick-prev {
+      left: -15px;
+    }
+    &.slick-next {
+      right: -8px;
+    }
+  }
+}
+
+.slick-slide main {
+  padding: 0 1rem;
+}
+
+.link {
+  background-image: url('https://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Sapa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.link:hover {
+  background-size: 120%;
+}
+
+.parent:hover .child {
+  background-color: #FF6600 !important ;
+  color: white !important;
+}
