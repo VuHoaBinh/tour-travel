@@ -43,7 +43,7 @@ const Tour = () => {
                 <img src='https://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/offers_slide_2-300x300.jpg' />
               </div>
               <div className='basis-3/4 text-sm'>
-                Du Lịch Phú Quóc - Nam Đảo 3 ngày 2 đêm dịp Noel & Tết Dương Lịch 2018
+                Du Lịch Phú Quóc - Nam Đảo 3 ngày 2 đêm dịp Noel & Tết Dương Lịch 2023
                 <p className='mt-1 font-extrabold'>4.999.000₫</p>
               </div>
             </div>
