@@ -8,9 +8,9 @@ const SliderImg = () => {
   const slider = useRef<InfiniteSlider>(null);
   const images = [
     'https://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/ba-na-hill.jpg',
+    'https://images.vietnamtourism.gov.vn/en//images/2022/dn.jpg',
     'https://vietnam.travel/sites/default/files/styles/top_banner/public/2021-05/Phu%20Quoc%20family%20guide.jpg',
     'https://innoviet.com/upload/2020/Blog/best-places-to-travel-by-tour-guide/rice-terraces-innoviet-best-places-to-visit-by-tour-guide.jpg',
-    'https://cdn.htmlForevervacation.com/uploads/media/images/uploaded_images/1674639468.jpeg'
   ];
 
   const toggleItemVisibility = () => {

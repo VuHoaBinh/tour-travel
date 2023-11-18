@@ -1,5 +1,5 @@
-import { AppBar, Container, Toolbar, Grid } from '@mui/material';
-import { LocationOn, LocalPhone, Email } from '@mui/icons-material';
+import { Email, LocalPhone, LocationOn } from '@mui/icons-material';
+import { AppBar, Container, Grid, Toolbar } from '@mui/material';
 
 const AppFooter = () => {
   return (
@@ -12,6 +12,8 @@ const AppFooter = () => {
         background: `#0a0a0a url('https://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/02/bg-footer.jpg') no-repeat center / cover`,
       }}
     >
+      <div className='flex items-center justify-center bg-[#000] pb-4 pt-3 text-sm text-[#A5A5A5] lg:text-base' >GOLDEN SPONSORS
+      </div>
       <Container maxWidth='lg' className='mt-16'>
         <Toolbar component={Container} maxWidth='xl'>
           <div className='flex flex-1 flex-col text-xs lg:flex-row'>
@@ -36,7 +38,7 @@ const AppFooter = () => {
                 <span className='mr-3'>
                   <Email fontSize='small' />
                 </span>
-                demonhunter@gmail.com
+                sunnytravel@company.com
               </p>
               <p className='h-8'>Đăng ký để được nhận thông tin khuyến mãi một cách nahnh chóng</p>
             </div>
